@@ -73,6 +73,10 @@ public abstract class OnionProxyManager {
     private volatile TorControlConnection controlConnection = null;
     private volatile int control_port;
 
+    public TorControlConnection getControlConnection() {
+        return controlConnection;
+    }
+
     public OnionProxyManager(OnionProxyContext onionProxyContext) {
         this.onionProxyContext = onionProxyContext;
     }
